@@ -21,6 +21,17 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+      <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+          (function(){
+              emailjs.init({
+                  publicKey: "tiAAq4sK8otmMLjWo",
+              });
+          })();
+      </script>
+      <script src="js/Script.js"></script>
   </head>
   <body>
 	  <div class="bg-top navbar-light">
@@ -116,12 +127,12 @@
 	            <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
 	          </div>
           </div>
-          <div class="col-md-3 d-flex">
-          	<div class="bg-light align-self-stretch box p-4 text-center">
-          		<h3 class="mb-4">Website</h3>
-	            <p><a href="#">yoursite.com</a></p>
-	          </div>
-          </div>
+<!--          <div class="col-md-3 d-flex">-->
+<!--          	<div class="bg-light align-self-stretch box p-4 text-center">-->
+<!--          		<h3 class="mb-4">Website</h3>-->
+<!--	            <p><a href="#">yoursite.com</a></p>-->
+<!--	          </div>-->
+<!--          </div>-->
         </div>
       </div>
     </section>
@@ -130,21 +141,24 @@
 			<div class="container">
 				<div class="row d-flex align-items-stretch no-gutters">
 					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
-						<form action="#">
+
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input id="name" type="text" class="form-control" placeholder="Your Name" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input id="email" type="email" class="form-control" placeholder="Your Email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input id="subject" type="text" class="form-control" placeholder="Subject" required>
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea  name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
               </div>
+
+
+<!--              <button type="submit" onclick="sendMail()" class="btn btn-primary py-3 px-5">Send Message</button>-->
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="submit" onclick="sendMail()" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
             </form>
 					</div>
