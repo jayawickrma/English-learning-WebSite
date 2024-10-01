@@ -29,6 +29,16 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "9oInhF76LnIpOPE7K",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -163,7 +173,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit" onclick="sendMail()">Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -269,6 +279,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
