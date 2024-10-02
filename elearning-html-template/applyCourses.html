@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Course Application Form</title>
   <link rel="stylesheet" href="css/applyCouses.css">
+
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "9oInhF76LnIpOPE7K",
+      });
+    })();
+  </script>
 </head>
 <body>
 <div class="form-container">
@@ -43,9 +54,10 @@
 
     <!-- Submit Button -->
     <div class="form-group">
-      <button type="submit">Submit Application</button>
+      <button type="submit" onclick="aplyCourse()">Submit Application</button>
     </div>
   </form>
 </div>
 </body>
+<script src="js/applyCourse.js"></script>
 </html>
