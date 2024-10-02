@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Application Form</title>
+  <link rel="stylesheet" href="css/applyCouses.css">
+</head>
+<body>
+<div class="form-container">
+  <h2>Apply for a Course</h2>
+  <form action="#" method="POST">
+    <!-- Name Field -->
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+
+    <!-- Email Field -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <!-- Contact Number Field -->
+    <div class="form-group">
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+    </div>
+
+    <!-- Course Type Dropdown -->
+    <div class="form-group">
+      <label for="course">Course Type:</label>
+      <select id="course" name="course" required>
+        <option value="" disabled selected>Select course type</option>
+        <option value="web-development">Web Development</option>
+        <option value="data-science">Data Science</option>
+        <option value="ai-ml">AI & Machine Learning</option>
+        <option value="cyber-security">Cyber Security</option>
+        <option value="software-engineering">Software Engineering</option>
+      </select>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-group">
+      <button type="submit">Submit Application</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
