@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Join Now | English Education</title>
   <link rel="stylesheet" href="css/joinNow.css">
+
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "9oInhF76LnIpOPE7K",
+      });
+    })();
+  </script>
 </head>
 <body>
 <div class="container">
@@ -32,9 +43,10 @@
         <option value="advanced">Advanced</option>
       </select>
 
-      <button type="submit" class="submit-btn">Join Now</button>
+      <button type="submit" class="submit-btn" onclick="joinNow()">Join Now</button>
     </form>
   </section>
 </div>
 </body>
+<script src="js/joinNow.js"></script>
 </html>
