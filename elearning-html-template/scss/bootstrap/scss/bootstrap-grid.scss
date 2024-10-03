@@ -10,13 +10,13 @@ $include-column-box-sizing: true !default;
 @import "functions";
 @import "variables";
 
-@import "mixins/lists";
-@import "mixins/breakpoints";
-@import "mixins/container";
-@import "mixins/grid";
-@import "mixins/utilities";
+@import "lists";
+@import "breakpoints";
+@import "container";
+@import "grid";
+@import "utilities";
 
-@import "vendor/rfs";
+@import "rfs";
 
 @import "containers";
 @import "grid";
@@ -62,4 +62,4 @@ $utilities: map-get-multiple(
   )
 );
 
-@import "utilities/api";
+@import "api";
