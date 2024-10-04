@@ -60,7 +60,8 @@ body {
 }
 
 /* Qualifications under the photo */
-.qualifications {
+.qualifications  {
+
     font-weight: bold;
     margin-top: 10px;
     font-size: 18px;
@@ -70,6 +71,7 @@ body {
     list-style-type: none;
     color: #0dcaf0;
     font-family: 'Arial', sans-serif;
+
 }
 
 
