@@ -5,5 +5,5 @@ function aplyCourse(){
         mobile : document.getElementById("contact").value(),
         course :document.getElementById("course").value(),
     }
-    emailjs.send("service_pm64cbc","",params).then(alert("email sent.."))
+    emailjs.send("service_b7a8a0s","template_dk2ckz9",params).then(alert("email sent.."))
 }

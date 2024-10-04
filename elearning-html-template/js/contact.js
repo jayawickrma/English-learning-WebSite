@@ -5,5 +5,5 @@ function sendMail(){
         subject :document.getElementById("subject").value(),
         message :document.getElementById("message").value(),
     }
-    emailjs.send("service_pm64cbc","template_dzovutd",params).then(alert("sent.."));
+    emailjs.send("service_b7a8a0s","template_dzovutd",params).then(alert("sent.."));
 }
