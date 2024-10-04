@@ -65,7 +65,12 @@ body {
     margin-top: 10px;
     font-size: 18px;
     color: #666;
-    text-align: center;
+
+}
+
+.qualifications>ul>p{
+    font-weight: bold;
+    color: #0b0e1b;
 }
 
 .qualifications p {
