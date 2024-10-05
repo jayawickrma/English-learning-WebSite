@@ -5,7 +5,7 @@ function sendMail(){
         subject :document.getElementById("subject").value,
         message :document.getElementById("message").value
     }
-    emailjs.send("service_b7a8a0s", "template_dk2ckz9", params)
+    emailjs.send("service_b7a8a0s", "template_dzovutd", params)
         .then(function (response) {
             alert("SUCCESS! Email sent: " + response.status);
         }, function (error) {

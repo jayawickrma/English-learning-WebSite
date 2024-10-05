@@ -3,7 +3,7 @@ function aplyCourse(){
         name : document.getElementById("name").value,
         email : document.getElementById("email").value,
         mobile : document.getElementById("contact").value,
-        Gender :document.getElementById("gender").value,
+        gender :document.getElementById("gender").value,
         course :document.getElementById("course").value
     };
 
