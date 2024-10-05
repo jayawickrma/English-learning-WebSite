@@ -3,6 +3,7 @@ function aplyCourse(){
         name : document.getElementById("name").value(),
         email : document.getElementById("email").value(),
         mobile : document.getElementById("contact").value(),
+        gender :document.getElementById("gender").value(),
         course :document.getElementById("course").value(),
     }
     emailjs.send("service_b7a8a0s","template_dk2ckz9",params).then(alert("email sent.."))
