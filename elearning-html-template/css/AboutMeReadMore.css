@@ -64,12 +64,13 @@ body {
 
     font-weight: bold;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 15px;
+
     text-align: left;
     margin-left: 0;
     padding: 10px;
     list-style-type: none;
-    color: #0dcaf0;
+    color: #0b0e1b;
     font-family: 'Arial', sans-serif;
 
 }
